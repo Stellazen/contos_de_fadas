@@ -22,23 +22,21 @@ document.addEventListener('DOMContentLoaded', () => {
         if (selectedPart && imageMap[selectedPart]) {
             bodyImage.src = imageMap[selectedPart];
 
-            // Remover a classe 'selected' de todos os botões
             buttons.forEach(button => button.classList.remove('selected'));
 
-            // Adicionar a classe 'selected' ao botão clicado
             event.target.classList.add('selected');
         }
     }
 
-    const correctAnswer = 'leg';  // A resposta correta
+    const correctAnswer = 'leg'; 
 
     function showResult() {
         if (selectedPart === correctAnswer) {
             modalMessage.textContent = 'Resposta correta! Parabéns pelo empenho e vamos para a próxima.';
-            nextQuestionButton.style.display = 'block'; // Exibir o botão "Próxima Pergunta"
+            nextQuestionButton.style.display = 'block'; 
         } else {
             modalMessage.textContent = 'Hmmm, não é bem isso. Que tal revisar esse tema e tentar novamente?';
-            nextQuestionButton.style.display = 'none'; // Ocultar o botão "Próxima Pergunta" se a resposta estiver errada
+            nextQuestionButton.style.display = 'none'; 
         }
         modal.showModal();
     }
@@ -48,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     buttonOpen.onclick = () => {
-        // Apenas abrir o modal se uma resposta foi selecionada
         if (selectedPart !== null) {
             showResult();
         } else {
@@ -60,8 +57,4 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.close();
     };
 
-    // Adicionar evento de clique ao botão "Próxima Pergunta"
-    nextQuestionButton.onclick = () => {
-        window.location.href = 'proxima-pagina.html'; // Substitua pelo link da próxima página
-    };
 });
