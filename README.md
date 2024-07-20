@@ -3,4 +3,5 @@
 Projeto desenvolvido para o desafio técinico da empresa Aprende Brasil. O desafio era criar um quiz educativo, nas melhores práticas de acessibilidade e HTML semântico.<br>
 Desenvolvido em HTML, CSS e JavaScript Vanilla.<br>
 Deploy realizado no Vercel: 📖 <a href="https://quiz-aprender.vercel.app/">Link aqui</a> ✨
+
 ![image](https://github.com/user-attachments/assets/864f859d-d621-4833-aa07-f24d838f8fa7)
