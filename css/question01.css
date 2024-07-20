@@ -1,0 +1,109 @@
+@import './main.css';
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../assets/images/fundo.png) no-repeat center center;
+    background-size: contain;
+}
+.question{
+    max-width: 800px;
+    text-align: center;
+}
+.question__title{
+    font-family: var(--font-title);
+    color: black;
+    background-color: var(--yellow);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
+    border-radius: 15px;
+    font-size: 2em;
+    padding: 5px;
+}
+.question__subtitle{
+    font-family: var(--font-title);
+    background-color: var(--yellow);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 5px;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.options__image{
+    width: 400px;
+}
+.options__form{
+    display: flex;
+    flex-direction: column;
+}
+.options__form__label{
+    margin: 5px;
+}
+.options__buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.option__button{
+    font-family: var(--font-text);
+    text-transform: uppercase;
+    width: 250px;
+    height: 70px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--yellow);
+    margin-top: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.option__button:hover{
+    border: 2px solid var(--orange);
+}
+.options__submit{
+    font-family: var(--font-text);
+    text-transform: uppercase;
+    width: 300px;
+    height: 70px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--blue);
+    font-size: 1.8em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.options__submit:hover{
+    background-color: var(--yellow);
+}
+
+dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+}
+.modal{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.close{
+    align-self: flex-end;
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    cursor: pointer;
+}
