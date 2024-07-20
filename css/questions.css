@@ -55,6 +55,11 @@
 .option__button.selected {
     border:2px solid var(--green); 
 }
+.options__buttons__p{
+    font-family: var(--font-title);
+    margin-bottom: 20px;
+    text-align: center;
+}
 .option__button{
     font-family: var(--font-text);
     text-transform: uppercase;
