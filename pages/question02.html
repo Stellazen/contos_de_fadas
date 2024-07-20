@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/questions.css">
+    <title>Pergunta 02</title>
+</head>
+<body>
+    <main>
+        <section class="principal">
+            <section class="question">
+                <h1 class="question__title">Nessa parte do corpo é legal de ver como somos diferentes. Nela, carregamos o nosso cabelo do jeitinho que ele é, nossos olhos de todas as cores, além da orelha e do nariz que é só nosso.</h1>
+                <h2 class="question__subtitle">Que parte do corpo é essa?</h2>
+            </section>
+            <section class="options">
+                <img id="body-image" class="options__image" src="../assets/images/question02/question2.png" alt="menina de pele clara e cabelos pretos presos eo lado da cebeça, com braços e pernas ao lado do corpo">
+                <div class="options__buttons">
+                    <button data-part="knee" class="option__button" >Joelho</button>
+                    <button data-part="hand" class="option__button">Mão</button>
+                    <button data-part="head" class="option__button">Cabeça</button>
+                    <button id="enviar" class="options__submit" type="submit">Enviar</button>
+                </div>
+            </section>
+        </section>
+    </main>
+    <dialog>
+        <section class="modal">
+            <button class="close">x</button>
+            <p class="modal__message"></p>
+            <a href="../pages/question03.html" id="next-question"><button class="modal__button">Próxima pergunta</button></a>
+        </section>
+    </dialog>
+    <script src="../js/question02.js"></script>
+</body>
+</html>

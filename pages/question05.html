@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/questions.css">
+    <title>Pergunta 05</title>
+</head>
+<body>
+    <main>
+        <section class="principal">
+            <section class="question">
+                <h1 class="question__title">Essa é a parte que liga nossos braços ao tronco. Por causa dela podemos mexer os braços pra todo lado na hora de dançar e até carregar a mochila na hora de ir pra escola.</h1>
+                <h2 class="question__subtitle">Qual parte do corpo é essa?</h2>
+            </section>
+            <section class="options">
+                <img id="body-image" class="options__image" src="../assets/images/question05/question05.png" alt="menino de pele clara e cabelos pretos curtos, com braços e pernas ao lado do corpo.">
+                <div class="options__buttons">
+                    <button data-part="head" class="option__button" >Cabeça</button>
+                    <button data-part="shoulder" class="option__button">Ombro</button>
+                    <button data-part="neck" class="option__button">Pescoço</button>
+                    <button id="enviar" class="options__submit" type="submit">Enviar</button>
+                </div>
+            </section>
+        </section>
+    </main>
+    <dialog>
+        <section class="modal">
+            <button class="close">x</button>
+            <p class="modal__message"></p>
+            <a href="../index.html" id="next-question"><button class="modal__button">Voltar ao início</button></a>
+        </section>
+    </dialog>
+    <script src="../js/question05.js"></script>
+</body>
+</html>

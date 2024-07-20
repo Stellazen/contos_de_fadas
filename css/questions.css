@@ -4,12 +4,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(../assets/images/fundo.png) no-repeat center center;
+    background: url(../assets/images/fundo-q-02.png) no-repeat center center;
     background-size: contain;
 }
 .question{
     max-width: 800px;
     text-align: center;
+    margin-top: 20px;
 }
 .question__title{
     font-family: var(--font-title);
@@ -51,6 +52,9 @@
     flex-direction: column;
     align-items: center;
 }
+.option__button.selected {
+    border:2px solid var(--green); 
+}
 .option__button{
     font-family: var(--font-text);
     text-transform: uppercase;
@@ -62,9 +66,6 @@
     margin-top: 5px;
     font-size: 1.5em;
     cursor: pointer;
-}
-.option__button:hover{
-    border: 2px solid var(--orange);
 }
 .options__submit{
     font-family: var(--font-text);
@@ -79,9 +80,8 @@
     margin-top: 20px;
 }
 .options__submit:hover{
-    background-color: var(--yellow);
+    background-color: var(--green);
 }
-
 dialog{
     position: absolute;
     top: 50%;
@@ -106,4 +106,45 @@ dialog{
     background-color: var(--yellow);
     border-radius: 50%;
     cursor: pointer;
+}
+.modal__message{
+    font-family: var(--font-title);
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+}
+.modal__button{
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--yellow);
+    margin-top: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.modal__button:hover{
+    border: 2px solid var(--green);
+}
+
+@media (max-width: 600px){
+    .options__image{
+        width: 250px;
+    }
+    .option__button{
+        width: 150px;
+        height: 50px;
+    }
+    .options__submit{
+        width: 200px;
+        height: 70px;
+    }
+}
+@media (max-width: 360px){
+    .options__image{
+        width: 200px;
+    }
 }

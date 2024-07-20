@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/questions.css">
+    <title>Pergunta 04</title>
+</head>
+<body>
+    <main>
+        <section class="principal">
+            <section class="question">
+                <h1 class="question__title">Pode ficar aberta ou fechada, pode dar oi e tchau. Com ela podemos escrever, segurar um objeto e até fazer carinho no nosso pet.</h1>
+                <h2 class="question__subtitle">Qual parte do corpo é essa?</h2>
+            </section>
+            <section class="options">
+                <img id="body-image" class="options__image" src="../assets/images/question04/question04.png" alt="menina de pele escura, com cabelos crespos presos ao lado da cabeça, com braços e pernas ao lado do corpo">
+                <div class="options__buttons">
+                    <button data-part="neck" class="option__button" >Pescoço</button>
+                    <button data-part="ear" class="option__button">Orelha</button>
+                    <button data-part="hand" class="option__button">Mão</button>
+                    <button id="enviar" class="options__submit" type="submit">Enviar</button>
+                </div>
+            </section>
+        </section>
+    </main>
+    <dialog>
+        <section class="modal">
+            <button class="close">x</button>
+            <p class="modal__message"></p>
+            <a href="../pages/question05.html" id="next-question"><button class="modal__button">Próxima pergunta</button></a>
+        </section>
+    </dialog>
+    <script src="../js/question04.js"></script>
+</body>
+</html>

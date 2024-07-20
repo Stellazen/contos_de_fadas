@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Mapeamento dos valores dos botões para as imagens
     const imageMap = {
-        'arm': '../assets/images/question01/arm.png',
-        'leg': '../assets/images/question01/leg.png',
-        'neck': '../assets/images/question01/neck0.png'
+        'knee': '../assets/images/question02/joelho.png',
+        'hand': '../assets/images/question02/mao.png',
+        'head': '../assets/images/question02/cabeca.png'
     };
 
     let selectedPart = null;
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    const correctAnswer = 'leg';  // A resposta correta
+    const correctAnswer = 'head';  // A resposta correta
 
     function showResult() {
         if (selectedPart === correctAnswer) {
@@ -60,8 +60,4 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.close();
     };
 
-    // Adicionar evento de clique ao botão "Próxima Pergunta"
-    nextQuestionButton.onclick = () => {
-        window.location.href = 'proxima-pagina.html'; // Substitua pelo link da próxima página
-    };
 });
