@@ -59,6 +59,7 @@
     font-family: var(--font-title);
     margin-bottom: 20px;
     text-align: center;
+    font-size: 1.2em;
 }
 .option__button{
     font-family: var(--font-text);
